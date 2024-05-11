@@ -41,3 +41,6 @@ def get_last_frame():
         return Response(jpeg_frame.tobytes(), mimetype='image/jpeg')
     else:
         return "No frame received yet"
+
+if __name__ == "__main__":
+    app.run(debug=True)
